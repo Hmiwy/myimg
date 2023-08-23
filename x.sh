@@ -34,6 +34,9 @@ systemctl enable ui.service
 systemctl start ui.service    
 systemctl restart ui.service   
 rm -rf /root/x-ui-linux-amd64.tar.gz
-echo -e "\n 默认账号密码为 admin "
+echo -e "\n 安装完成！\n"
+echo -e " 浏览器访问IP:端口\n"
+echo -e " 默认账号密码为 admin "
+
 
 
