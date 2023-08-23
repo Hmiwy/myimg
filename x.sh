@@ -34,6 +34,6 @@ systemctl enable ui.service
 systemctl start ui.service    
 systemctl restart ui.service   
 rm -rf /root/x-ui-linux-amd64.tar.gz
-echo "默认账号密码admin"
+echo "\n默认账号密码admin"
 
 
