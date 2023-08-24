@@ -1,7 +1,12 @@
 #!/bin/bash
 function N01() {
+
+if [ ! -f "/root/nezha"];then
 rm -rf /root/nezha
+fi
+if [ ! -f "/root/tz.sh"];then
 rm -rf /root/tz.sh
+fi
 }
 function N02() {
 wget https://raw.githubusercontent.com/TGX6666/UnPanel/master/nezha
