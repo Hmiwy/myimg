@@ -1,7 +1,7 @@
 #!/bin/bash
 function N01() {
 rm -rf /root/nezha
-rm -rf /root/jk.sh
+rm -rf /root/tz.sh
 }
 function N02() {
 wget https://raw.githubusercontent.com/TGX6666/UnPanel/master/nezha
@@ -17,7 +17,7 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/root/
-ExecStart=/root/nezha -s -aa:5555 -p -pp
+ExecStart=/root/nezha -s -aa:-gg -p -pp
 Restart=always
 
 
@@ -27,12 +27,16 @@ EOF
 
 echo "请输入主机：" 
 read replace1_text
-
+echo "请输入端口默认是5555："
+read replace2_text
+if replance2_text==""
+	replance2_text=5555
 echo "请输入秘钥：" 
 read replace_text
 
 # 执行替换操作
 sed -i "s/-pp/$replace_text/g" /etc/systemd/system/nezha.service
+sed -i "s/-gg/$replace2_text/g" /etc/systemd/system/nezha.service
 sed -i "s/-aa/$replace1_text/g" /etc/systemd/system/nezha.service
 chmod +x  /etc/systemd/system/nezha.service
 systemctl enable nezha.service
