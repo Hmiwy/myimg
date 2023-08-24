@@ -31,6 +31,7 @@ echo "请输入端口默认是5555："
 read replace2_text
 if replance2_text==""
 	replance2_text=5555
+echo $replance2_text 
 echo "请输入秘钥：" 
 read replace_text
 
