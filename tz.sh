@@ -31,15 +31,18 @@ echo "请输入端口默认是5555："
 read replace2_text
 if test -z "$replace2_text"
 then
- replance2_text=5555
+a=5555
+sed -i "s/-gg/$a/g" /etc/systemd/system/nezha.service
 echo $replance2_text
+else
+sed -i "s/-gg/$replace2_text/g" /etc/systemd/system/nezha.service
 fi
 echo "请输入秘钥：" 
 read replace_text
 
 # 执行替换操作
 sed -i "s/-pp/$replace_text/g" /etc/systemd/system/nezha.service
-sed -i "s/-gg/$replace2_text/g" /etc/systemd/system/nezha.service
+
 sed -i "s/-aa/$replace1_text/g" /etc/systemd/system/nezha.service
 chmod +x  /etc/systemd/system/nezha.service
 systemctl enable nezha.service
