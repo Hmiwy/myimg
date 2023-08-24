@@ -29,10 +29,11 @@ echo "请输入主机："
 read replace1_text
 echo "请输入端口默认是5555："
 read replace2_text
-if replance2_text==""
+if [replance2_text==""]
+then
  replance2_text=5555
- fi
-echo $replance2_text 
+echo $replance2_text
+fi
 echo "请输入秘钥：" 
 read replace_text
 
