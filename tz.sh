@@ -33,7 +33,6 @@ if test -z "$replace2_text"
 then
 a=5555
 sed -i "s/-gg/$a/g" /etc/systemd/system/nezha.service
-echo $a
 else
 sed -i "s/-gg/$replace2_text/g" /etc/systemd/system/nezha.service
 fi
