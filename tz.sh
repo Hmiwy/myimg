@@ -1,7 +1,5 @@
 #!/bin/bash
 function N01() {
-cd /root
-ls -a
 rm -rf /root/nezha
 rm -rf /root/tz.sh
 }
@@ -31,7 +29,7 @@ echo "请输入主机："
 read replace1_text
 echo "请输入端口默认是5555："
 read replace2_text
-if ["$replance2_text"=" "]
+if test -z "$replace2_text"
 then
  $replance2_text=5555
 echo $replance2_text
