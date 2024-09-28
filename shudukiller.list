@@ -17,3 +17,7 @@ host-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 host-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT 
 host-SUFFIX,pglstatp-toutiao.com,REJECT,extended-matching 
 host-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT 
+# 微信小程序通用规则
+host, wxsnsdy.wxs.qq.com, REJECT
+host, wxsmsdy.video.qq.com, REJECT
+host, wxsnsdythumb.wxs.qq.com, REJECT
