@@ -22,3 +22,18 @@ host-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
 host, wxsnsdy.wxs.qq.com, REJECT
 host, wxsmsdy.video.qq.com, REJECT
 host, wxsnsdythumb.wxs.qq.com, REJECT
+
+# NAME:TalkatoneAntiAds
+# Talkatone 去广告规则集
+# 类型选择：RULE-SET
+# 策略建议：REJECT-DROP
+host-SUFFIX,ads.inmobi.com
+host-SUFFIX,tappx.com
+host-SUFFIX,criteo.com
+host-SUFFIX,pubmatic.com
+host-SUFFIX,smaato.net
+host-SUFFIX,amazon-adsystem.com
+host-SUFFIX,googleads.g.doubleclick.net
+host-SUFFIX,adsappier.com
+host-SUFFIX,appier.net
+host-SUFFIX,appiersig.com
