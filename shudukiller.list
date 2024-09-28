@@ -22,3 +22,31 @@ host-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
 host, wxsnsdy.wxs.qq.com, REJECT
 host, wxsmsdy.video.qq.com, REJECT
 host, wxsnsdythumb.wxs.qq.com, REJECT
+
+#!name=talkatone
+host-SUFFIX,ads.inmobi.com,REJECT-DROP
+host-SUFFIX,tappx.com,REJECT-DROP
+host-SUFFIX,criteo.com,REJECT-DROP
+host-SUFFIX,pubmatic.com,REJECT-DROP
+host-SUFFIX,smaato.net,REJECT-DROP
+host-SUFFIX,amazon-adsystem.com,REJECT-DROP
+host-SUFFIX,googleads.g.doubleclick.net,REJECT-DROP
+host-SUFFIX,adsappier.com,REJECT-DROP
+host-SUFFIX,appier.net,REJECT-DROP
+host-SUFFIX,appiersig.com,REJECT-DROP
+
+host-SUFFIX,inner-active.mobi,DIRECT
+host-SUFFIX,mobilefuse.com,DIRECT
+host-SUFFIX,inmobi.com,DIRECT
+host-SUFFIX,crashlytics.com,DIRECT
+host-SUFFIX,talkatone.com,DIRECT
+host-SUFFIX,kochava.com,DIRECT
+host-SUFFIX,tktn.be,PROXY
+host-SUFFIX,cohere.com,DIRECT
+host-SUFFIX,ip-api.com,DIRECT
+host-SUFFIX,agkn.com,DIRECT
+host-SUFFIX,tktn.at,DIRECT
+IP-CIDR,50.117.27.0/24,DIRECT
+IP-CIDR,69.46.75.0/24,DIRECT
+IP-CIDR,205.164.56.0/24,DIRECT
+IP-CIDR,63.251.124.0/24,DIRECT
